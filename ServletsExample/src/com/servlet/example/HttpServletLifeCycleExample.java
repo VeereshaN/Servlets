@@ -22,6 +22,7 @@ public class HttpServletLifeCycleExample extends HttpServlet {
 	public void service(ServletRequest req, ServletResponse res) throws ServletException, IOException {
 		PrintWriter out = res.getWriter();
 		out.write("service method inside the HttpServletExample ");
+		printWriter.close();
 		
 		  if (!(req instanceof HttpServletRequest &&
 	                res instanceof HttpServletResponse)) {
@@ -35,6 +36,7 @@ public class HttpServletLifeCycleExample extends HttpServlet {
 	public void service(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
 		PrintWriter out = res.getWriter();
 		out.write("service method inside the HttpServletExample with HttpServletRequest as request parameter");
+		printWriter.close();
 	}
 
 	public void destroy() {

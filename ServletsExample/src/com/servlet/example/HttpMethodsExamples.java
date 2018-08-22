@@ -21,13 +21,24 @@ public class HttpMethodsExamples extends HttpServlet {
 	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		PrintWriter out = resp.getWriter();
 		out.write("doGet method is called when request from client is HTTP GET method ");
+
 		out.close();
+
+		printWriter.close();
+
 	}
 	
 	protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		PrintWriter out = resp.getWriter();
+
 		out.write("doPost method is called when request from client is HTTP POST method ");
 		out.close();
+
+		out.write("doPost method is called when request from client is HTTP POST method ");printWriter.close();
+		printWriter.close();
+
+		
+
 	}
 
 
