@@ -20,6 +20,7 @@ public class ServletLifeCycle extends GenericServlet{
 	public void service(ServletRequest servletRequest, ServletResponse servletResponse) throws ServletException, IOException {
 		PrintWriter out = servletResponse.getWriter();
 		out.write("Initialisation for servlet is completed..... and now serlvet is in service method");
+		printWriter.close();
 	}	
 	
 	
