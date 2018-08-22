@@ -24,7 +24,7 @@ public class HttpMethodsExamples extends HttpServlet {
 
 		out.close();
 
-		printWriter.close();
+	
 
 	}
 	
@@ -33,9 +33,6 @@ public class HttpMethodsExamples extends HttpServlet {
 
 		out.write("doPost method is called when request from client is HTTP POST method ");
 		out.close();
-
-		out.write("doPost method is called when request from client is HTTP POST method ");printWriter.close();
-		printWriter.close();
 
 		
 
