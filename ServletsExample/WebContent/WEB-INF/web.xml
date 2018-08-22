@@ -22,6 +22,31 @@
 	</servlet-mapping>
 	
 	
+	<servlet>
+	<servlet-name>httpServletLifeCycle</servlet-name>
+	<servlet-class>com.servlet.example.HttpServletLifeCycleExample</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>httpServletLifeCycle</servlet-name>
+	<url-pattern>/httpservletlifecycle</url-pattern>
+	</servlet-mapping>
+	
+	
+		
+	<servlet>
+	<servlet-name>httpMethods</servlet-name>
+	<servlet-class>com.servlet.example.HttpMethodsExamples</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>httpMethods</servlet-name>
+	<url-pattern>/httpmethodsexample</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+	
 	
 	
 	
