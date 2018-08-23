@@ -12,7 +12,7 @@
 when to use : if any specific content is modified from time to time. you can manage the Web application easily without modifing servlet through editing the value in web.xml
 
 Your web.xml look like :
-
+```js
  <web-app>  
       <servlet>  
         ......     
@@ -24,9 +24,10 @@ Your web.xml look like :
         ......  
       </servlet>  
     </web-app>
+```
 
 This way you can get value in servlet :
-
+```js
 public void doGet(HttpServletRequest request, HttpServletResponse response)  
     throws ServletException, IOException {  
      //getting paramValue
@@ -34,7 +35,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
     String driver=config.getInitParameter("paramName"); 
     } 
     </p>
-
+```
 
 ## ServletContext
     <p> web container create one ServletContext object per web Application. This object is used to get information from web.xml
@@ -42,7 +43,7 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
 when to use : If you want to share information to all sevlet, it a better way to make it available for all servlet.
 
 web.xml look like :
-
+```js
 <web-app>  
  ......  
 
@@ -52,9 +53,9 @@ web.xml look like :
   </context-param>  
  ......  
 </web-app>  
-
+```
 This way you can get value in servlet :
-
+```js
 public void doGet(HttpServletRequest request,HttpServletResponse response)  
 throws ServletException,IOException  
 {  
@@ -63,4 +64,6 @@ ServletContext context=getServletContext();
 
 //Getting the value of the initialization parameter and printing it  
 String paramName=context.getInitParameter("paramName");   
-}  </p>
+}  
+```
+</p>
