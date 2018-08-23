@@ -34,11 +34,11 @@ public void doGet(HttpServletRequest request, HttpServletResponse response)
     ServletConfig config=getServletConfig();  
     String driver=config.getInitParameter("paramName"); 
     } 
-    </p>
+  
 ```
-
+ </p>
 ## ServletContext
-    <p> web container create one ServletContext object per web Application. This object is used to get information from web.xml
+<p> web container create one ServletContext object per web Application. This object is used to get information from web.xml
 
 when to use : If you want to share information to all sevlet, it a better way to make it available for all servlet.
 
