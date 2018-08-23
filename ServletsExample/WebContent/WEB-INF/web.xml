@@ -9,7 +9,10 @@
 	<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
 	
-	
+	<context-param>
+	<param-name>stateName</param-name>
+	<param-value>Karnataka</param-value>
+	</context-param>
 	
 	<servlet>
 	<servlet-name>servletLifeCycle</servlet-name>
@@ -44,6 +47,30 @@
 	<url-pattern>/httpmethodsexample</url-pattern>
 	</servlet-mapping>
 	
+	<servlet>
+	<servlet-name>servletConfigExample</servlet-name>
+	<servlet-class>com.servlet.example.ServletConfigExample</servlet-class>
+	<init-param>
+	<param-name>cityName</param-name>
+	<param-value>Bangalore</param-value>
+	</init-param>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>servletConfigExample</servlet-name>
+	<url-pattern>/servletconfigexample</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+	<servlet-name>servletContextExample</servlet-name>
+	<servlet-class>com.servlet.example.ServletContextExample</servlet-class>
+	</servlet>
+	
+	<servlet-mapping>
+	<servlet-name>servletContextExample</servlet-name>
+	<url-pattern>/servletcontextexample</url-pattern>
+	</servlet-mapping>
 	
 	
 	
