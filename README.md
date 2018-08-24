@@ -68,3 +68,10 @@ String paramName=context.getInitParameter("paramName");
 }  
 ```
 </p>
+
+## HttpSession
+<p>
+Http is stateless protocol and we need to maintain session, so web container will create one object to maintain the state of particular user this object is called HttpSession Object. When request comes to web container it will  create HttpSession object with unique id to it and container also provides HttpSession interface through which servlets can modify the HttpSession Object created by the container. Web container also sets a Cookie in the header of the HTTP response with cookie name and the unique session ID as its value.
+
+The cookie is stored in the user browser, the client (user’s browser) sends this cookie back to the server for all the subsequent requests until the cookie is valid. The Servlet container checks the request header for cookies and get the session information from the cookie and use the associated session from the server memory.
+</p>
